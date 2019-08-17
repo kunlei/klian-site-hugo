@@ -1,5 +1,5 @@
-baseurl = "https://kunlei.github.io/"
-title = "Operations Research in Action"
+baseurl = "https://kunlei.github.io"
+title = "OR in Action"
 languageCode = "en-us"
 theme = "beautifulhugo"
 metaDataFormat = "yaml"
@@ -31,7 +31,7 @@ googleAnalytics = "UA-124241468-1"
 
 [[menu.main]]
   name = "Blog"
-  url = ""
+  url = "post"
   weight = 1
 
 [[menu.main]]
