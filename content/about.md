@@ -1,27 +1,126 @@
 ---
 title: About Me
-subtitle: Putting the Jenius in RealJenius
+# subtitle: put your subtitle here
 comments: false
 ---
 
-Hello! My name is R.J. Lorimer, and I'm a professional software developer.
+Hello! My name is Kunlei Lian, and I'm a Sr. Data Scientist currently working for [Walmart Labs](https://www.walmartlabs.com/).
 
-I am currently working for [Ultimate Software](http://ultimatesoftware.com).
 
 ### My History
 
-Prior to working for Ultimate Software, I spent seven years immersed in the high-energy (and never boring) gaming industry, first working for Electrotank as *Director of Platform Engineering*, then working for Mind Pirate as the *Cloud Whisperer*, and most recently working for [High 5 Games](http://www.high5games.com) as their *Director of Server Development*.
+Prior to working for Walmart Labs, I spent four years studying Industrial Engineering at [University of Arkansas](https://www.uark.edu) and got my Ph.D. in 2017.
+My dissertation, titled in Service Consistency in Vehicle Routing, centers on *studying service consistency in vehicle routing problems* spanning over multiple days. Previously, I got my Masters and Bachelors, both in industrial engineering, from [Huazhong University of Science and Technology](https://www.hust.edu.cn) in 2012 and 2009, respectively.
 
-Over the course of my career, I have technically lead a large variety of powerful teams.
-
-Here’s a mini CV:
-
-* I’ve been developing in Java, or otherwise on the JVM for 18 years.
-* My expertise is in building high-concurrency, low-latency, fault-tolerant systems.
-* Working in the games industry has given me unique experience in building low-latency systems at significant scale. This has given me valuable knowledge in low-level network, complex clustering problems, and large data management.
-* The games industry also deals with tremendous amounts of data (hundreds of terabytes) all day long, so I have developed a lot of knowledge working with large scale database and distributed technologies.
-* I have several years experience with Ruby, C#, Scala, Javascript, HTML, relational and non-relational database technologies.
-* I have done a significant amount of editorial work over the years.
-* I do all my own stunts.
 
 Please feel free to [Contact Me!](/contact)
+
+
+### Resume
+---
+#### Summary
+Motivated operations research professional passionate about optimization and programming:
+
+* Solid background in optimization theories, including linear programming, integer programming and heuristis/mataheuristics
+* Exceptional implementation capability to build production-scale optimization engine
+
+
+---
+#### Experience
+* **Walmart Inc.**
+  + **Sr. Data Scientist (Operations Research)** --- Jan 2019 – Present
+        - Grocery Profiling
+          - Translated VBA-based grocery profiling logic to Java
+        - Ocean Procurement Optimization
+          - Built mixed-integer-programming-based optimization engine to help Global Logistics Team with selecting international carriers to cover company global procurement demands for fiscal year 2020. Established comprehensive and flexible interface to allow users incorporating various operational/service considerations and constraints.
+          - Facilitated managerial decision making throughout over 100 rounds of fast-paced bidding process by presenting optimization results, explaining optimization logic and incorporating new service constraints in real time.
+          - Optimization process resulted in *significant labor hour reduction*, *balanced carrier/alliance allocation per lane* and about **_30 million_** *operational cost savings*. 
+          - Skills used: *Excel* (for data input and output), *Java and Cplex* (for optimization)
+  + **Data Scientist (Operations Research)** --- Aug 2016 – Jan 2019
+        - Driver Tractor Assignment Optimization
+          - Built *column-generation*-based optimization engine to assign drivers to tractors in order to minimize driver split-seat, maximize tractor utilization and prioritize drivers with bigger longevity.
+          - Went through numerous iterations of model and code upgrade to *reduce runtime from hours to seconds* and support rollout to all dispatching offices of Walmart private fleet, resulting in approximately **_4 million_** *labor cost savings* and **_8 million_** *operational cost savings* annually.
+          - Skills used: *Java* (for column generation part using multi-threading), *Cplex* (for solving master problem)
+        - Assortment Optimization
+          - Participating in internal company-wise Id8 competition, implemented a *column-generation*-based optimization engine that's able to estimate store-level customer purchase probability based on historical transaction data. 
+          - Built a mixed-integer programming engine to decide optimal offer set for each category at store level.
+          - Algorithm taken by internal assortment optimization team and internal startup Store No.8 for further research and development.
+          - Skills used: *Java*, *Cplex*
+        - Truckload Optimization
+          - Rewrote key legacy truckload optimization COBOL code in Java, *reducing data processing runtime from 10 minutes to 10 seconds*.
+          - Implemented logic to process gigabytes of input data into individual optimization data module; created initial optimization model and implemented baseline optimization code; implemented heuristic algorithms to solve instances with large amount of orders, resulting in saving of 14 trucks daily.
+          - Skills used:  *Java*, *Cplex*
+        - Safety Stock Optimization
+          - Worked on implementation and validation of next generation inventory optimization model for Walmart U.S. and achieved 8% improvement over the current system during pilot store testing.
+          – Lead data platform migration from Teradata to Hadoop, responsible for data ETL and Hive query implementation.
+          - Skills used: *R*, *Hive*, *Shell Scripting*
+        - Frontend Optimization
+          - Translated SQL into Hive and implemented shell scripts to run Hive scripts on a monthly basis.
+          - Skills used: *Hive*, *Shell Scripting*
+  + **Global Business Process Intern** --- May 2016 – Jul 2016
+        - Safety Stock Optimization
+* **University of Arkansas**
+  + **Ph.D. Candidate and Research Assistant** --- Aug 2012 – May 2016
+        - Multi-day Vehicle Routing with Service Consistency
+          - Proposed an improved multi-directional local search algorithm to study the tradeoff between service consistency optimization and travel cost minimization.
+          - Implemented multiple traditional and state-of-the-art multi-objective optimization algorithms to conduct performance comparison on approximating Pareto frontier.
+          - Skill used: *C++*
+        - Periodic Vehicle Routing with Service Consistency
+          - Studied the tradeoff between service consistency optimization and travel cost minimization in the context of periodic vehicle routing problems.
+          - Implemented multiple metaheuristic algorithms to approximate Pareto frontier.
+          - Skill used: *C++*
+        - Consistent Vehicle Routing with Branch-and-Price
+          - Proposed a branch-and-price formulation for the consistent vehicle routing problem in which driver consistency and arrival time consistency are strictly enforced.
+          - Implemented a branch-and-bound algorithm with column generation process at each tree node to find the optimal solutions for benchmarking instances.
+          - Skill used: *C++*, *Cplex*
+
+---
+#### Education
+* **Ph.D.** in **Industrial Engineering** --- **University of Arkansas**, 2012 - 2017
+  - Dissertation: service consistency in vehicle routing
+* **M.S.** in **Industrial Engineering** --- **Huazhong University of Science and Technology**, 2009 - 2012
+  - Thesis topic: manufacturing system optimization
+* **B.S.** in **Industrial Engineering** --- **Huazhong University of Science and Technology**, 2005 - 2009
+  - Thesis topic: process planning optimization
+
+
+---
+#### Skills
+* Optimization
+  - Linear programming, integer programming, heuristics/metaheuristics
+  - Cplex (used in both research and industry projects)
+* Programming
+  - Java (used extensively on a daily basis in most projects)
+  - C++ (used around eight years in M.S. and Ph.D. research)
+* Production Tools
+  - Windows, Mac, Linux
+  - Vim, Maven, Jenkins, Git/GitHub
+  - Visual Studio, Netbeans, IntelliJ, Visual Studio Code
+
+---
+#### Academic Background
+* **Publications**
+  - **K. Lian**, A. B. Milburn and R. L. Rardin. 2016. An improved multi-directional local search algorithm for the multi-objective consistent vehicle routing problem. *IIE Transaction*. 48(10): 975-992.
+  - **K. Lian**, C. Zhang, L. Gao and X. Shao, 2012. A modified colonial competitive algorithm for the mixed-model U-line balancing and sequencing problem. *International Journal of Production Research*. 50(18): 5117-5131.
+  - **K. Lian**, C. Zhang, L. Gao and X. Li, 2012. Integrated process planning and scheduling using an imperialist competitive algorithm. *International Journal of Production Research*. 50(15): 4326-4343.
+  - **K. Lian**, C. Zhang, X. Shao and L. Gao, 2012. Optimization of process planning with various flexibilities using an imperialist competitive algorithm. *International Journal of Advanced Manufacturing Technology*. 59(5-8): 815-828.
+  - **K. Lian**, C. Zhang, X. Shao and Y. Zeng, 2011. A multi-dimensional tabu search algorithm for the optimization of process planning. *Science China Technological Sciences*. 54(12): 3211 – 3219.
+  - **K. Lian**, C. Zhang, L. Gao, S. Xu and Y. Sun, 2011. A cooperative simulated annealing algorithm for the optimization of process planning. *Advanced Materials Research*. 181: 489 – 494.
+  - F. Deng, C. Zhang, **K. Lian** and S. Xu, 2011. An adaptive ant colony optimization for solving assembly line balancing problem. *China Mechanical Engineering*. 22(16).
+  - B. Yuan, C. Zhang, **K. Lian** and X. Shao. A hybrid honey-bees mating optimization algorithm for assembly sequence planning problem. In: Proceedings of the 8th International Conference on Natural Computation, May 29, 31, 2012.
+  - **K.Lian**,C.Zhang, L.Gao and X.Shao. Single row facility layout problem using an imperialist competitive algorithm. In: Proceedings of the 41st International Conference on Computers & Industrial Engineering, October 23 – 26, 2011.
+  - M. Liu, C. Zhang, L. Gao and **K. Lian**. New High Performing Hybrid Particle Swarm Optimization for Permutation Flow Shop Scheduling Problem with Minimization of Makespan. In: IEEE International Conference in Industrial Engineering and Engineering Management, December 7, 2010.
+  - **K.Lian**, C.Zhang, X.Li and L.Gao. An effective hybrid genetic simulated annealing algorithm for process planning problem. In: Proceedings of the 5th International Conference on Natural Computation, August 14 – 16, 2009.
+* **Presentations**
+  - **K. Lian**, A.B. Milburn and R.L. Rardin, 2015. Study on a multi-objective periodic vehicle routing problem with service consistency, INFORMS Annual Meeting, Philadelphia, PA (November 1 – 4, 2015)
+  - **K. Lian**, A.B. Milburn and R.L. Rardin, 2015. Study on a multi-objective periodic vehicle routing problem with service consistency, IIE Annual Conference & Expo, Nashville, Tennessee (May 30 – June 2, 2015)
+  - **K. Lian**, A.B. Milburn and R.L. Rardin, 2014. Vehicle routing problem with service consistency: a multi- objective approach, INFORMS Annual Meeting, San Francisco, California (November 9 – 12, 2014)
+  - **K. Lian**, A.B. Milburn and R.L. Rardin, 2014. Study on home health care nursing routing problem, IIE Annual Conference & Expo, Montreal, Canada (May 31 – June 3, 2014)
+  - **K. Lian**, A.B. Milburn and R.L. Rardin, 2013. Patient-focused considerations in home health nursing routing problems, INFORMS Annual Meeting, Minneapolis, Minnesota (October 6 – 9, 2013)
+* **Awards**
+  - University of Arkansas
+        - IIE E.J. Sierleja Memorial Fellowship, 2015 – 2016
+  - Huazhong University of Science and Technology
+        - Graduate Fellowship, 2009 – 2012
+        - Academic Achievement Award (1/38), 2009 – 2011 – First place, Master’s Thesis Award (1/38), 2012
+        - Outstanding Graduate Student Award (5/38), 2009 – First place, Bachelor’s Thesis Award (3/35), 2009

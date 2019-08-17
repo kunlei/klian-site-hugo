@@ -14,7 +14,7 @@ googleAnalytics = "UA-124241468-1"
   post = "/:year/:month/:day/:filename/"
 
 [Params]
-  subtitle = "Kunlei's Person Blog"
+  subtitle = "Kunlei's Personal Blog"
   logo = "img/myAvatar.png"
   favicon = "img/myAvatar.png"
   dateFormat = "January 2, 2006"
