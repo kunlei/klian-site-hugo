@@ -89,7 +89,7 @@ public interface Service {
 
 
 Then, we define various receivers:
-```
+```java
 /**
  * Front desk is the only receiver that interacts with a customer
  * @author Kunlei Lian

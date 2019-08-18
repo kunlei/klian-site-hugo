@@ -15,9 +15,10 @@ My dissertation, titled in Service Consistency in Vehicle Routing, centers on *s
 
 Please feel free to [Contact Me!](/contact)
 
+---
 
 ### Resume
----
+
 #### Summary
 Motivated operations research professional passionate about optimization and programming:
 

@@ -1,5 +1,5 @@
 baseurl = "https://kunlei.github.io"
-title = "OR in Action"
+title = "O.R. in Action"
 languageCode = "en-us"
 theme = "beautifulhugo"
 metaDataFormat = "yaml"
@@ -14,7 +14,7 @@ googleAnalytics = "UA-124241468-1"
   post = "/:year/:month/:day/:filename/"
 
 [Params]
-  subtitle = "Kunlei's Personal Blog"
+  subtitle = "Kunlei's Blog"
   logo = "img/myAvatar.png"
   favicon = "img/myAvatar.png"
   dateFormat = "January 2, 2006"

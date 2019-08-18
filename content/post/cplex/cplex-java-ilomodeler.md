@@ -12,13 +12,15 @@ tags:
 ---
 
 IloModeler is one of the main modeling interface defined in Cplex Concert Technology.
-It is used to create
+It is used to create the three key components of a mathematical model, that are, 
 
 + decision variables
 + constraints
 + objective
 
-In addition, cplex provides lots of anxiliary functions:
+### Auxiliary Functions
+
+In addition, cplex provides lots of auxiliary functions:
 
 + constant
     + IloIntExpr	constant(int c)

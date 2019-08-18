@@ -7,6 +7,7 @@ draft: false
 mathjax: true
 categories:
     - "optimization"
+tag: ["research"]
 ---
 
 
