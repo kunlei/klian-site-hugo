@@ -19,6 +19,9 @@ In the meantime, lots of things happened since my last post, the most significan
 Initially tasked with translating an optimization algorithm written in VBA into a more modern language (Java is the final choice), I ended up taking the responsibility of developing a frontend user interface as well as backend optimization engine.
 I've always admired real software engineering works and I jumped into this opportunity without much idea of what I signed up for.
 I will write more posts later sharing my experience of acquiring some [*Spring Boot*](https://spring.io/projects/spring-boot) knowledge to provide backend Restful API to be consumed by the frontend application.
+
+
+
 On the frontend site, a new world opened up in front of me since I learned skills of html, css and javascript. 
 To people outside this field, frontend developers are really luck since they have at least three fancy skills to put on their resume no matter which framework they use, and React is the choice in my case.
 As I tap into the world of frontend development, much more blog generation techniques came into my attention, [Gatsby](https://www.gatsbyjs.org) being the most intriguing one.

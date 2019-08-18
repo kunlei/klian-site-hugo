@@ -20,6 +20,11 @@ googleAnalytics = "UA-124241468-1"
   dateFormat = "January 2, 2006"
   rss = true
   comments = true
+  readingTime = true
+  wordCount = true
+  socialShare = true
+  delayDisqus = true
+  showRelatedPosts = true
 
 [Author]
   name = "Kunlei Lian"
@@ -28,6 +33,7 @@ googleAnalytics = "UA-124241468-1"
   github = "kunlei"
   # twitter = "realjenius"
   linkedin = "kunlei-lian-ba55a73b"
+  website = "https://kunlei.githu.io"
 
 [[menu.main]]
   name = "Blog"
