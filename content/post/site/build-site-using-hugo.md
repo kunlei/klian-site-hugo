@@ -27,7 +27,7 @@ I am still playing with Gatsby with the ultimate goal of creating a blog that's 
 
 
 ### Blog redesign
-As it won't any time soon that I build my own blog using Gatsby, and I can't live the mainroad theme, the temporary solution is locating a new theme that looks better.
+As it won't be any time soon that I build my own blog using Gatsby, and I can't live the mainroad theme, the temporary solution is locating a new theme that looks better.
 The rest of the post will focus on how to create a similar looking site using Hugo and a theme called *beautifulhugo*.
 
 #### Install Hugo
