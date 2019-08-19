@@ -9,6 +9,8 @@ pygmentsOptions = "linenos=inline"
 DefaultContentLanguage = "en"
 disqusShortname = "orinaction"
 googleAnalytics = "UA-124241468-1"
+enableEmoji = true
+math = true
 
 [permalinks]
   post = "/:year/:month/:day/:filename/"

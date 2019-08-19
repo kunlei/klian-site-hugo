@@ -160,4 +160,3 @@ git push origin master
 Congratulations! Now your site can be viewed anywhere at ```https://username.github.io```. 
 
 
-
