@@ -4,7 +4,6 @@ subtitle:
 date: 2019-08-17
 draft: false
 comments: true
-toc: true
 tag: ["web", "hugo", "blog"]
 ---
 
@@ -117,3 +116,5 @@ hugo server -t beautifulhugo
 
 
 #### Build site and deploy
+
+

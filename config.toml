@@ -40,6 +40,7 @@ googleAnalytics = "UA-124241468-1"
   url = "post"
   weight = 1
 
+# coding
 [[menu.main]]
   identifier = "coding"
   name = "Coding"
@@ -58,11 +59,25 @@ googleAnalytics = "UA-124241468-1"
   weight = 2
 
 
+# about
+[[menu.main]]
+  identifier = "about"
+  name = "About"
+  weight = 9
 
 [[menu.main]]
+  parent = "about"
+  name = "Resume"
+  url = "/page/resume"
+  weight = 1
+
+[[menu.main]]
+  parent = "about"
   name = "About"
-  url = "about"
-  weight = 9
+  url = "/page/about"
+  weight = 2
+
+
 
 [[menu.main]]
   name = "Tags"
