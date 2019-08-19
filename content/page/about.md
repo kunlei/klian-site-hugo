@@ -23,8 +23,9 @@ If you are interested in reaching me, you can always:
 
 $$a < b$$
 
-$$a & = b
+$$
 \begin{aligned}
-  a & = b
+  a &= b \newline
+  c &= d \newline
 \end{aligned}
 $$
