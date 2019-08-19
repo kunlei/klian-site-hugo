@@ -3,6 +3,8 @@ title: Recent Updates and Blog Redesign using Hugo
 subtitle: 
 date: 2019-08-17
 draft: false
+comments: true
+toc: true
 tag: ["web", "hugo", "blog"]
 ---
 
@@ -75,7 +77,43 @@ drwxr-xr-x  2 klian  74715970    64B Aug 18 10:27 themes
 ```
 
 #### Install the theme
+At this point, we have a local directory that is not version controlled.
+To do this, execute the following command at *~/dev/blog/tutorial/*:
+```
+git init
+```
+This effectively initializes a git repository on our machine.
+The Hugo community makes available lots of themes for us to choose from, and this site uses a theme called **beautifulhugo**, which is available on github and can be cloned into the *themes* directory.
+Run the command below at *~/dev/blog/tutorial/*:
+
+```
+git submodule add https://github.com/halogenica/beautifulhugo themes/beautifulhugo
+```
+
+Now the *themes* directory looks like below:
+```
+total 0
+drwxr-xr-x  15 klian  74715970   480B Aug 18 21:36 beautifulhugo
+```
+We've successfully installed a theme ready to be used by our site.
+
+#### Start blogging
+All of our site contents are placed within the, not surprisingly, *content* directory.
+As a start, we can create markdown file *about.md* to say something about the author of the site:
+```
+---
+title: About Me
+date: 2019-08-17
+tags: ["site"]
+---
+
+This is John Doe's site.
+```
+
+The site can be viewed locally by running the Hugo command:
+```
+hugo server -t beautifulhugo
+```
 
 
-#### Build site and publish
-
+#### Build site and deploy

@@ -13,7 +13,13 @@ Prior to working for Walmart Labs, I spent four years studying Industrial Engine
 My dissertation, titled in Service Consistency in Vehicle Routing, centers on *studying service consistency in vehicle routing problems* spanning over multiple days. Previously, I got my Masters and Bachelors, both in industrial engineering, from [Huazhong University of Science and Technology](https://www.hust.edu.cn) in 2012 and 2009, respectively.
 
 
-Please feel free to [Contact Me!](/contact)
+If you are interested in reaching me, you can always:
+
+* Email me at [kunlei -at- gmail.com](mailto:kunlei1987@gmail.com)
+* Hit me up on [Linkedin at in/kunlei](https://www.linkedin.com/in/kunlei-lian/)
+* Find me on [Github](https://github.com/kunlei/)
+* Leave a comment on my site!
+
 
 ---
 
