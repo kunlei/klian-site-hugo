@@ -116,5 +116,48 @@ hugo server -t beautifulhugo
 
 
 #### Build site and deploy
+For now, the site only lives on your machine and only by deploying it to some hosting servers that others can access it.
+The easiest way to get a free hosting server is probably using something you already have, that is, github.
+[This page](https://gohugo.io/hosting-and-deployment/) provides awesome guides to other deploying options, but in this post I'll just show how to deploy our site to github.
+
+Github offers two options to host user sites: user pages or project pages.
+The former can be achieved by creating a special repository with name *username.github.io*.
+Note that the *username* is your github account name.
+This repository is where we should put our generated site files produced by Hugo.
+It is not the place we save the source file of our site.
+We should create a separate repository to save the source files and the repository I created for this tutorial is
+```
+https://github.com/kunlei/hugo-tutorial.git
+```
+Now we can push our local source files to this repository
+```
+git add .
+git commit -m "first commit"
+git remote add origin https://github.com/kunlei/hugo-tutorial.git
+git push -u origin master
+```
+
+Next, we need to link the user page repository to the *public* directory:`
+```
+rm -rf public
+git submodule add -b master git@github.com:kunlei/kunlei.github.io.git public
+```
+
+Then we can ask Hugo to create our site files by running
+```
+hugo -t beautifulhugo
+```
+This will create all our site files and put them into the *public* directory.
+
+Last, we only need to push all the files inside the *public* directory to github:
+```
+cd public
+git add .
+git commit -m "update"
+git push origin master
+```
+
+Congratulations! Now your site can be viewed anywhere at ```https://username.github.io```. 
+
 
 
