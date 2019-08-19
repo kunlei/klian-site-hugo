@@ -21,11 +21,10 @@ If you are interested in reaching me, you can always:
 * Find me on [Github](https://github.com/kunlei/)
 * Leave a comment on my site!
 
-$$a < b$$
 
 $$
-\begin{aligned}
-  a &= b \newline
-  c &= d \newline
-\end{aligned}
+\begin{align}
+\text{min.} \quad & \sum_{i = 0}^{\infty}x_i \newline
+\text{s.t.} \quad & x_i \in {0, 1}
+\end{align}
 $$
