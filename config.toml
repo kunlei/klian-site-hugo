@@ -39,7 +39,7 @@ mathjax = true
 
 [[menu.main]]
   name = "Blog"
-  url = "post"
+  url = ""
   weight = 1
 
 # coding
