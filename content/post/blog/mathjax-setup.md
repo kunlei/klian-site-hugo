@@ -2,6 +2,7 @@
 title: MathJax Setup in Hugo
 date: 2019-08-19
 comments: true
+draft: false
 tag: ["site"]
 ---
 
