@@ -2,6 +2,7 @@
 title: About Me
 subtitle: 
 comments: false
+mathjax: true
 ---
 
 Hello! My name is Kunlei Lian, and I'm a Sr. Data Scientist currently working for [Walmart Labs](https://www.walmartlabs.com/).
