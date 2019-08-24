@@ -18,7 +18,7 @@ mathjax = true
 [Params]
   subtitle = "Kunlei's Blog"
   logo = "img/logo.png"
-  favicon = "img/myAvatar.png"
+  favicon = "img/logo.png"
   dateFormat = "January 2, 2006"
   rss = true
   comments = true

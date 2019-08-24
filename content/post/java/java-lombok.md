@@ -16,14 +16,14 @@ Most importantly, those methods must be visually present in the class file, whic
 I never imagined a Java world before without getters and setters in classes, but apparently someone else did and went ahead inventing it already.
 The magic is adding the below Maven dependency and you are free from writing, even seeing, getters and setters!
 
-```java
+```xml
 <dependencies>
-	<dependency>
-		<groupId>org.projectlombok</groupId>
-		<artifactId>lombok</artifactId>
-		<version>1.18.8</version>
-		<scope>provided</scope>
-	</dependency>
+  <dependency>
+    <groupId>org.projectlombok</groupId>
+    <artifactId>lombok</artifactId>
+    <version>1.18.8</version>
+    <scope>provided</scope>
+  </dependency>
 </dependencies>
 ```
 
