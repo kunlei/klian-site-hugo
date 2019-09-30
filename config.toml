@@ -38,8 +38,15 @@ mathjax = true
   website = "https://kunlei.githu.io"
 
 [[menu.main]]
+  identifier = "blog"
   name = "Blog"
   url = "post"
+  weight = 1
+
+[[menu.main]]
+  parent="blog"
+  name="Reading"
+  url = "/page/book-list"
   weight = 1
 
 # coding
