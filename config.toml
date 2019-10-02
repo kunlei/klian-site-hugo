@@ -16,7 +16,7 @@ mathjax = true
   post = "/:year/:month/:day/:filename/"
 
 [Params]
-  subtitle = "Kunlei's Blog"
+  subtitle = ""
   logo = "img/logo.png"
   favicon = "img/logo.png"
   dateFormat = "January 2, 2006"
