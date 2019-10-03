@@ -3,6 +3,11 @@ title: Java Package Lombok
 date: 2019-08-23
 toc: true
 tag: ["java"]
+------
+title: Java Package Lombok
+date: 2019-08-23
+toc: true
+tag: ["java"]
 ---
 
 This is probably one of those 'everyone knows except me' cases in Java world.
