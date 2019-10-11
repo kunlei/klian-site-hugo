@@ -1,14 +1,8 @@
 ---
 title: Cplex Concert Java Modeling Intefaces - IloModeler
-authorbox: true
-sidebar: false
 draft: true
 date: 2019-04-04
-categories:
-    - "Cplex"
-tags:
-    - "cplex"
-    - "Java"
+tags: ["cplex", "java"]
 ---
 
 IloModeler is one of the main modeling interface defined in Cplex Concert Technology.

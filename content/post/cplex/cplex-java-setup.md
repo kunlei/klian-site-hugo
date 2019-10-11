@@ -1,15 +1,9 @@
 ---
-title: Setup and Run Cplex using Java
-authorbox: true
-date: 2019-04-03
-sidebar: false
+title: Setup and Run CPLEX using Java
+date: 2019-10-11
 draft: false
 mathjax: true
-categories:
-    - "Cplex"
-tags:
-    - "cplex"
-    - "Java"
+tags: ["cplex", "java"]
 ---
 
 I have been using IBM ILOG CPLEX for quite some years, both in my research back in graduate study towards my M.S. and Ph.D. degrees and in my industrial projects in the past some years.
@@ -108,7 +102,7 @@ public class TestSetup {
 The Cplex root installation directory on my Mac is */Applications/CPLEX_Studio128/*.
 There are two ways to run this example code:
 
-##### Using command line
+#### Using command line
 
 We have to understand the Java compile and run process if we want to call an external library within our Java program.
 The compiling process creates .class files from our .java files, and we run the whole program using the newly created .class files.
@@ -151,7 +145,7 @@ Follow the steps below to compile the small Java program:
     y = 1.0
     ```
 
-###### Using IDE
+#### Using IDE
 We could save all the hassles of manually compiling Java codes by using an IDE like IntelliJ IDEA (I am using 2019.1 build as of this writing).
 All we need to do is 
 

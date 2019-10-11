@@ -1,15 +1,8 @@
 ---
 title: Cplex Java Concert Technology - Constraints (1)
-authorbox: true
-sidebar: false
-draft: false
+draft: true
 date: 2019-03-06
-toc: false
-categories:
-    - "Cplex"
-tags:
-    - "cplex"
-    - "Java"
+tags: ["cplex", "java"]
 ---
 
 Constraint is an essential part of an optimization model, and Cplex provides various ways of defining  constraints in a model.

@@ -1,14 +1,8 @@
 ---
 title: Cplex Java Concert Technology - Objectives
-authorbox: true
-sidebar: false
-draft: false
+draft: true
 date: 2019-03-04
-categories:
-    - "Cplex"
-tags:
-    - "cplex"
-    - "Java"
+tags: ["cplex", "java"]
 ---
 
 ### IloModeler
