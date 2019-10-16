@@ -1,7 +1,7 @@
 ---
-title: Build Optimization Models by Row using CPLEX Java API
+title: Build Optimization Models by Column using CPLEX Java API
 draft: true
-date: 2019-10-15
+date: 2019-10-19
 tags: ["cplex", "Java"]
 ---
 
@@ -119,7 +119,10 @@ private static void buildModelWithIloCplex(IloCplex cplex) throws IloException {
 
 
 ## Building models using IloModeler
-The method below 
+The method below builds the same model in CPLEX with (almost) the same method body.
+The only difference is that the input parameter is now an instance of a class implementing the IloModeler interface.
+As discussed in other post, IloModeler defines various methods to build a model in CPLEX and it does not restrict you of which solving method to use later.
+Not surprisingly, IloCplex is a class implementing the IloModeler interface.
 
 ```java
 /**
@@ -146,6 +149,10 @@ private static void buildModelWithIloModeler(IloModeler modeler) throws IloExcep
 ```
 
 ## Building models using IloMPModeler
+The method below is similar to the one given in the previous section.
+IloMPModeler is another interface implemented by IloCplex that specifies various model-building methods.
+Note that IloMPModeler extends IloModeler and adds additional facilities to enable model building by column, which we will explore in future posts.
+
 ```java
 /**
   * using IloMPModeler to build model
@@ -169,3 +176,7 @@ private static void buildModelWithIloMPModeler(IloMPModeler mpModeler) throws Il
   cons[1] = mpModeler.addLe(mpModeler.sum(mpModeler.prod(2.0, var[0]), mpModeler.prod(3.0, var[1])), 200.0, "c2");
 }
 ```
+
+## Summary
+Put it together, row-wise model building in CPLEX can be achieved utilizing *IloModeler*, *IloMPModeler* and *IloCplex*.
+The process starts with creating decision variables, followed by defining objective function(s) and creating constraints individually.
