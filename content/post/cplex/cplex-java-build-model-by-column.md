@@ -1,19 +1,19 @@
 ---
 title: Build Optimization Models by Column using CPLEX Java API
-draft: true
-date: 2019-10-19
+draft: false
+date: 2019-10-20
 tags: ["cplex", "Java"]
 ---
 
-The CPLEX Java API separates model building from solving algorithms by defining various interfaces in the Concert package.
-There are two ways in constructing a mathematical model regarding how constraints are added to the model:
-
-* by row
-* by column
+In a previous [post]({{< ref "cplex-java-build-model-by-row.md">}}), we looked at how to build models by adding rows sequentially.
+It starts with creating decision variables, with which the objective function is defined.
+Constraints are then created sequentially and incorporated into the model.
+In optimization textbooks, mathematical models are usually represented in matrix format, and in CPLEX, it is indeed possible to build models column-wise.
+This post aims to demystify the process of building models by adding columns sequentially.
 
 ## An illustrative example
-This post looks at how to build models by row.
-Assuming we have a small mathematical formulation as below:
+
+The same illustrative example is repeated here for clarity purpose.
 
 $$
 \begin{align}
@@ -24,159 +24,94 @@ $$
 \end{align}
 $$
 
-The code snippets in following sections show three options in creating a CPLEX model in (slightly) different ways.
-The point I am trying to make is that the Concert package defines a set of interfaces, including IloModeler and IloMPModeler, that specify methods to be implemented by model-building classes.
-Note that IloModeler and IloMPModeler themselves don't define the interface of the solving methods.
-In other words, they only do what their names imply, that is, building CPLEX models.
 
-## Typical model building workflow
-The code below illustrates a typical model-building workflow.
-An IloCplex object is first created and passed to various model building methods.
-The model is then solved by the *solve()* method defined within IloCplex.
-The three methods in the switch block may appear similar at first glance in that they all take an IloCplex object as input argument
-However, the underlying mechanism is vastly different, which we will examine shortly.
+## Column-wise model building
+
+The code below shows an implementation class with two static methods: *main()* and *buildModelByColumn()*.
+The former contains a typical model building and solving workflow in CPLEX:
+
+* A CPLEX environment is created by instantiating an object of class IloCplex
+* A model is built using functionalities provided by IloCplex
+* The model is solved and optimal value is displayed
+
+The latter method details the steps of creating new columns and adding them to a model.
+In the case of row-wise modeling building, constraint creation assumes the availability of decision variables.
+Likewise, in order to create a new variable and subsequently add it to the model in column-wise modeling, basic model structure must exist.
+In other words, we must have an objective function and constraints already defined.
+To this purpose, the method starts with creating an empty objective function by employing the method *addMaximize()*.
+Two IloRange constraints are also defined using *addRange()* by merely providing their corresponding lower and upper bounds.
+
+With an empty model ready at our disposal, we create new variables in two steps:
+
+1. Create all necessary IloColumn objects and bind them.
+2. Create new variables from the IloColumn objects.
+
+*IloColumn* is a abstract class in CPLEX Concert technology that cannot be directly instantiated.
+Instead, we must use facility functions defined in IloCplex to obtain objects of IloColumn.
+The code below shows two, of possible three, of these functions:
+
+1. column(IloObjective obj)
+2. column(IloRange range)
+3. column(IloLPMatrix matrix) - we will look at this in future post
+
+You may also notice the function *and()* in the code and it is used to connect multiple IloColumn objects into a composite object.
+It is necessary since it is not uncommon for a decision variable to show up in both the objective function and one or more constraints.
+With a new column ready, the next step is to create a  new decision variable using *numVar(IloColumn col, double lb, double ub, String name)*
+After all the variables are created, the model is ready to be solved.
 
 ```java
-public static void main(String[] args) {
-  try {
-    IloCplex cplex = new IloCplex();
+import ilog.concert.IloColumn;
+import ilog.concert.IloException;
+import ilog.concert.IloMPModeler;
+import ilog.concert.IloNumVar;
+import ilog.concert.IloObjective;
+import ilog.concert.IloRange;
+import ilog.cplex.IloCplex;
 
-    int method = 1;
-    switch (method) {
-      case 1:
-        // build models using IloCplex
-        buildModelWithIloCplex(cplex);
-        break;
-      case 2:
-        // build models using IloModeler
-        buildModelWithIloModeler(cplex);
-        break;
-      case 3:
-      default:
-        // build models using IloMPModeler
-        buildModelWithIloMPModeler(cplex);
-        break;
-    }
+public class BuildModelByColumn {
 
-    if (cplex.solve()) {
-      System.out.println("objective value = " + cplex.getObjValue());
+  public static void main(String[] args) {
+    try {
+      // instantiate a IloCplex object
+      IloCplex cplex = new IloCplex();
+
+      // build model by column
+      buildModelByColumn(cplex);
+
+      // solve model and display objective value
+      if (cplex.solve()) {
+        System.out.println("optimal value = " + cplex.getObjValue());
+      }
+    } catch (IloException e) {
+      e.printStackTrace();
     }
-  } catch (IloException e) {
-    e.printStackTrace();
+  }
+
+  private static void buildModelByColumn(IloMPModeler modeler) throws IloException {
+    // create an objective
+    IloObjective obj = modeler.addMaximize();
+
+    // create empty constraints
+    IloRange[] cons = new IloRange[2];
+    cons[0] = modeler.addRange(20.0, Double.MAX_VALUE, "c1");
+    cons[1] = modeler.addRange(-Double.MAX_VALUE, 200.0, "c2");
+
+    // create columns and new variables
+    IloColumn col0 = modeler.column(obj, 20.0).and(modeler.column(cons[0], 1.0)).and(modeler.column(cons[1], 2.0));
+    IloColumn col1 = modeler.column(obj, 15.0).and(modeler.column(cons[0], 2.0)).and(modeler.column(cons[1], 3.0));
+    IloNumVar var0 = modeler.numVar(col0, 0, 50.0, "x1");
+    IloNumVar var1 = modeler.numVar(col1, 10.0, Double.MAX_VALUE, "x2");
   }
 }
 ```
 
-## Building models using IloCplex
-The following code is probably the most widely used way of building mathematical models in CPLEX.
-An IloCplex object, named as cplex, is passed as input argument into the method and it does all the heavy lifting of model building.
-The row-wise model building starts with creating decision variables, which are usually of type IloNumVar, an interface defined in the Concert package.
-Note that the code shows a concise, and recommended, way to create variables in one line, instead of creating variable individually.
-This is done by invoking the *numVarArray* method, which takes a couple of parameters:
+## Why column-wise modeling is needed
 
-* the number of decision variables to be created
-* the array of lower bounds imposed on the variables
-* the array of upper bounds defined on the variables
-* the (optional) variables names in an array
+For the small example in this post, column-wise modeling provides no real benefits over row-wise modeling.
+It is really personal preference to choose either row-wise or column-wise way of building simple models in CPLEX.
+One caveat is that *IloMPModeler* must be used if one wants to build models by column.
+*IloModeler* only defines functions for row-wise modeling and lacks the capability to build models by column.
 
-With decision variables defined and ready for use, the next step is to specify a objective function.
-I'll explore alternative ways to create objectives in CPLEX in future posts, the code below shows just one way.
-An objective function consists of two components: an expression and an objective sense.
-The former is created using a helper function named *scalProd*, which takes two input parameters, an array of variables and their corresponding coefficients. 
-The *addMaximize* method adds a maximization objective to the model, and returns an reference of IloObjective.
-
-Next comes the fun part, and it is the reason why we call this model building approach 'by row'.
-Note that *IloRange* is an interface defined in Concert package to represent a constraint.
-Since the constraints in our mathematical formulation have only lower bound or upper bound, not both, we uses the convenient methods *addGe()* and *addLe()* to define *and* add constraints into the model.
-The methods are intuitive to use, we just need to give them an expression, a right hand size and possibly a name.
-
-One caveat is that the *ge()* and *le()* are also available, but they serve to only build constraints, without adding the built constraints into the model.
-If you decide to use them, remember to add the constraints to the model specifically, otherwise, the model won't do the magic for you.
-
-```java
-/**
-  * using IloCplex instance to create model directly
-  * @param cplex instance of IloCplex
-  * @throws IloException
-  */
-private static void buildModelWithIloCplex(IloCplex cplex) throws IloException {
-  // create decision variables
-  double[] lb = {0.0, 10.0};
-  double[] ub = {50.0, Double.MAX_VALUE};
-  String[] varNames = {"x1", "x2"};
-  IloNumVar[] var = cplex.numVarArray(2, lb, ub, varNames);
-
-  // define objective function
-  double[] objCoefs = {20.0, 15.0};
-  IloObjective obj = cplex.addMaximize(cplex.scalProd(objCoefs, var));
-
-  // construct constraints
-  IloRange[] cons = new IloRange[2];
-  cons[0] = cplex.addGe(cplex.sum(cplex.prod(1.0, var[0]), cplex.prod(2.0, var[1])), 20.0, "c1");
-  cons[1] = cplex.addLe(cplex.sum(cplex.prod(2.0, var[0]), cplex.prod(3.0, var[1])), 200.0, "c2");
-}
-```
-
-
-## Building models using IloModeler
-The method below builds the same model in CPLEX with (almost) the same method body.
-The only difference is that the input parameter is now an instance of a class implementing the IloModeler interface.
-As discussed in other post, IloModeler defines various methods to build a model in CPLEX and it does not restrict you of which solving method to use later.
-Not surprisingly, IloCplex is a class implementing the IloModeler interface.
-
-```java
-/**
-  * using IloModeler to create model
-  * @param modeler interface
-  * @throws IloException
-  */
-private static void buildModelWithIloModeler(IloModeler modeler) throws IloException {
-  // create decision variables
-  double[] lb = {0.0, 10.0};
-  double[] ub = {50.0, Double.MAX_VALUE};
-  String[] varNames = {"x1", "x2"};
-  IloNumVar[] var = modeler.numVarArray(2, lb, ub, varNames);
-
-  // define objective function
-  double[] objCoefs = {20.0, 15.0};
-  IloObjective obj = modeler.addMaximize(modeler.scalProd(objCoefs, var));
-
-  // construct constraints
-  IloRange[] cons = new IloRange[2];
-  cons[0] = modeler.addGe(modeler.sum(modeler.prod(1.0, var[0]), modeler.prod(2.0, var[1])), 20.0, "c1");
-  cons[1] = modeler.addLe(modeler.sum(modeler.prod(2.0, var[0]), modeler.prod(3.0, var[1])), 200.0, "c2");
-}
-```
-
-## Building models using IloMPModeler
-The method below is similar to the one given in the previous section.
-IloMPModeler is another interface implemented by IloCplex that specifies various model-building methods.
-Note that IloMPModeler extends IloModeler and adds additional facilities to enable model building by column, which we will explore in future posts.
-
-```java
-/**
-  * using IloMPModeler to build model
-  * @param mpModeler interface
-  * @throws IloException
-  */
-private static void buildModelWithIloMPModeler(IloMPModeler mpModeler) throws IloException {
-  // create decision variables
-  double[] lb = {0.0, 10.0};
-  double[] ub = {50.0, Double.MAX_VALUE};
-  String[] varNames = {"x1", "x2"};
-  IloNumVar[] var = mpModeler.numVarArray(2, lb, ub, varNames);
-
-  // define objective function
-  double[] objCoefs = {20.0, 15.0};
-  IloObjective obj = mpModeler.addMaximize(mpModeler.scalProd(objCoefs, var));
-
-  // construct constraints
-  IloRange[] cons = new IloRange[2];
-  cons[0] = mpModeler.addGe(mpModeler.sum(mpModeler.prod(1.0, var[0]), mpModeler.prod(2.0, var[1])), 20.0, "c1");
-  cons[1] = mpModeler.addLe(mpModeler.sum(mpModeler.prod(2.0, var[0]), mpModeler.prod(3.0, var[1])), 200.0, "c2");
-}
-```
-
-## Summary
-Put it together, row-wise model building in CPLEX can be achieved utilizing *IloModeler*, *IloMPModeler* and *IloCplex*.
-The process starts with creating decision variables, followed by defining objective function(s) and creating constraints individually.
+On the other hand, column-wise modeling is necessary in cases like solving problems using column generation, a widely used technique for large scale optimization problems.
+Imagine that we have a surfeit of decision variables that it is impossible to include all of them in the model at once, a natural way to overcome this is to only include a portion of variables and gradually identify and add new variables that could improve the objective function.
+The fashion of adding variables gradually necessitates the way of column-wise modeling.
