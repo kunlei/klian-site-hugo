@@ -63,8 +63,8 @@ mathjax = true
 
 [[menu.main]]
   parent = "coding"
-  name = "O.R."
-  url = "/page/java-index"
+  name = "CPLEX"
+  url = "/page/cplex-index"
   weight = 2
 
 

@@ -1,0 +1,25 @@
+---
+title: CPLEX
+subtitle: 
+date: 2019-08-17
+draft: false
+comments: false
+tags: ["cplex", "java"]
+---
+
+This is an index page for all CPLEX-related posts.
+<!-- [By column]({{< ref "">}}) -->
+
+## CPLEX Java API
+
+1. [Setup]({{< ref "../post/cplex/cplex-java-setup.md" >}})
+2. API deep dive
+   1. [IloAddable, IloModel and IloModeler]({{< ref "../post/cplex/cplex-java-api-deep-dive-1.md">}})
+   2. IloLPMatrix
+3. Model building
+   1. By row
+      1. [without IloLPMatrix]({{< ref "../post/cplex/cplex-java-build-model-by-row.md">}})
+      2. with IloLPMatirx
+   2. By column
+      1. [without IloLPMatrix]({{< ref "../post/cplex/cplex-java-build-model-by-column.md">}})
+      2. with IloLPMatrix
