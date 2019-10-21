@@ -19,7 +19,7 @@ This is an index page for all CPLEX-related posts.
 3. Model building
    1. By row
       1. [without IloLPMatrix]({{< ref "../post/cplex/cplex-java-build-model-by-row.md">}})
-      2. with IloLPMatirx
+      2. [with IloLPMatirx]({{< ref "../post/cplex/cplex-java-build-model-by-row-lpmatrix.md" >}})
    2. By column
       1. [without IloLPMatrix]({{< ref "../post/cplex/cplex-java-build-model-by-column.md">}})
-      2. with IloLPMatrix
+      2. [with IloLPMatrix({{< ref "../post/cplex/cplex-java-build-model-by-column-lpmatrix.md" >}})]
