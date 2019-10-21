@@ -22,4 +22,4 @@ This is an index page for all CPLEX-related posts.
       2. [with IloLPMatirx]({{< ref "../post/cplex/cplex-java-build-model-by-row-lpmatrix.md" >}})
    2. By column
       1. [without IloLPMatrix]({{< ref "../post/cplex/cplex-java-build-model-by-column.md">}})
-      2. [with IloLPMatrix({{< ref "../post/cplex/cplex-java-build-model-by-column-lpmatrix.md" >}})]
+      2. [with IloLPMatrix]({{< ref "../post/cplex/cplex-java-build-model-by-column-lpmatrix.md" >}})

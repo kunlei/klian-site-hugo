@@ -36,3 +36,4 @@ I am an avid reader and below compiles the books I read or am reading...
 23. Someday is not a day in the week
 24. Anonymous
 25. Limitless mind: learn, lead and live without barriers
+26. No Hard Feelings: The Secret Power of Embracing Emotions at Work *by Liz Fosslien and West Duffy, Mollie*
