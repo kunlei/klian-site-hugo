@@ -1,7 +1,7 @@
 ---
 title: Build Optimization Models by Column with IloLPMatrix using CPLEX Java API
 draft: false
-date: 2019-10-21
+date: 2019-10-20
 tags: ["cplex", "Java"]
 ---
 
