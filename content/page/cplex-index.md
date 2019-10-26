@@ -23,3 +23,7 @@ This is an index page for all CPLEX-related posts.
    2. By column
       1. [without IloLPMatrix]({{< ref "../post/cplex/cplex-java-build-model-by-column.md">}})
       2. [with IloLPMatrix]({{< ref "../post/cplex/cplex-java-build-model-by-column-lpmatrix.md" >}})
+4. Callback
+   1. Optimization callback
+      1. [Continuous callback]({{< ref "../post/cplex/cplex-java-continuous-callback.md" >}})
+   2. Tuning callback

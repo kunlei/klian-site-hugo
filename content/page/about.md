@@ -4,7 +4,7 @@ subtitle:
 comments: false
 ---
 
-Hello! My name is Kunlei Lian, and I'm a Sr. Data Scientist currently working for [Walmart Labs](https://www.walmartlabs.com/).
+Hello! My name is Kunlei Lian, and I'm a Sr. Data Scientist working at [Walmart Labs](https://www.walmartlabs.com/).
 
 
 ### My History
@@ -14,9 +14,9 @@ My dissertation, titled in Service Consistency in Vehicle Routing, centers on *s
 
 
 ### Contact Me
-If you are interested in reaching me, you can always:
+If you are interested in contacting me, you can always:
 
-* Email me at [kunlei -at- gmail.com](mailto:kunlei1987@gmail.com)
+* Email me at [kunlei -at- gmail.com](mailto:kunlei.lian@gmail.com)
 * Hit me up on [Linkedin at in/kunlei](https://www.linkedin.com/in/kunlei-lian/)
 * Find me on [Github](https://github.com/kunlei/)
 * Leave a comment on my site!
