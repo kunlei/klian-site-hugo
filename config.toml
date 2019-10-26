@@ -77,7 +77,7 @@ mathjax = true
 [[menu.main]]
   parent = "about"
   name = "Resume"
-  url = "/page/resume"
+  url = "/pagedown-resume"
   weight = 1
 
 [[menu.main]]
