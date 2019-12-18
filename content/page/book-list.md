@@ -38,3 +38,8 @@ I am an avid reader and below compiles the books I read or am reading...
 25. Limitless mind: learn, lead and live without barriers
 26. No Hard Feelings: The Secret Power of Embracing Emotions at Work *by Liz Fosslien and West Duffy, Mollie*
 27. [All the Wrong Moves]({{< ref "../post/book/all-the-wrong-moves.md" >}}): A Memoir About Chess, Love, and Ruining Everything *by Sasha Chapin*
+28. Now is the way: an unconventional approach to modern mindfulness
+29. Some of my friends are ...: the daunting challenges and untapped benefits of cross-racial friendships
+30. Principles
+31. Digital minimalism
+32. Naked money
