@@ -1,10 +1,8 @@
 ---
 title: Dissertation - Service Consistency in Vehicle Routing
-authorbox: true
 date: 2019-04-03
 sidebar: false
 draft: false
-mathjax: true
 categories:
     - "optimization"
 tag: ["research"]
