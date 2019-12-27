@@ -9,8 +9,13 @@ tag: ["book"]
 
 I am an avid reader and below compiles the books I read or am reading...
 
+### 2020
+
+1. A liberated mind
+2. Thinking, fast and slow
 
 ### 2019
+
 1. [The gardener and the carpenter]({{< ref "/post/book/gardener-and-carpenter.md">}})
 2. [Everything I never told  you]({{< ref "/post/book/everything-i-never-told-you.md">}})
 3. [So you want to talk about race]({{< ref "/post/book/talk-about-race.md">}})
