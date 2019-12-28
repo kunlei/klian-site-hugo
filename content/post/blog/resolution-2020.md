@@ -39,6 +39,8 @@ The goal in this category is,
 
 + 10 articles about C++
   + Anything related to C++ is fine, use it as a notebook to save new learnings for future reference.
+  + Update log
+        + [Data types]({{< ref "../cpp/cpp-data-types.md" >}})
 + 10 articles about optimization
   + Mostly about essential algorithms in operations research. Writing things in a clear and easy to understand way is best to full grasp a concept.
 
@@ -62,8 +64,9 @@ Weekly and monthly reflection is beneficial for person growth and I should do it
 
 + weekly and monthly reflection
 
-
 ## Update Log
 
 I'll come back frequently to review my progress and update items that have been completed.
 It'd be interesting to see the journey next year.
+
++ Compiled post about C++ data types - 12/28/2019

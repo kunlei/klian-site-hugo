@@ -3,7 +3,7 @@ title: Java Package Lombok
 date: 2019-08-23
 toc: true
 tags: ["java"]
-------
+---
 
 This is probably one of those 'everyone knows except me' cases in Java world.
 I recently found a new package called 'lombok' that taught me a fresh lesson about how powerful Java annotations could be.
