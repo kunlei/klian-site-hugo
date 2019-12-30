@@ -35,7 +35,7 @@ mathjax = true
   github = "kunlei"
   # twitter = "realjenius"
   linkedin = "kunlei-lian-ba55a73b"
-  website = "https://kunlei.githu.io"
+  website = "https://kunlei.github.io"
 
 [[menu.main]]
   identifier = "blog-cn"
