@@ -54,7 +54,7 @@ I will think more and write about as I read.
 
 One important learning this year is to live (more) in the present.
 I am a somewhat worrying person, frequently ruminating about things the past and daydreaming into things that could happen in the future.
-It happens to me that there is really no past or future.
+One thing I learned from the book *A Liberated Mind* is that there is really no past or future.
 The past is merely 'present' memory of what have happened, which could have been interpreted differently in different situations, or even in different moods. 
 Also there is not really any future, which is nothing but 'present' imagination of what might happen in the days/months/years to come.
 Both of them only live in our current mind.

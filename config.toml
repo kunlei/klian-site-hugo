@@ -38,6 +38,12 @@ mathjax = true
   website = "https://kunlei.githu.io"
 
 [[menu.main]]
+  identifier = "blog-cn"
+  name = "中文"
+  url = "blog-cn"
+  weight = 0
+
+[[menu.main]]
   identifier = "blog"
   name = "Blog"
   url = "post"
