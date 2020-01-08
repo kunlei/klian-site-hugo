@@ -11,7 +11,7 @@ I am an avid reader and below compiles the books I read or am reading...
 
 ### 2020
 
-1. A liberated mind
+1. [A liberated mind]({{< ref "/post/book/book-liberated-mind.md">}})
 2. Thinking, fast and slow
 
 ### 2019
