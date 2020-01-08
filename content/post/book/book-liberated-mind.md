@@ -52,8 +52,43 @@ For example, when we try to interpret something, it's important to remind oursel
 
 ## Accept pains to uncover values
 
+To this date I still vividly remember the embarrassing moment in middle school, which was about twenty years ago (a long time, yes, I know), when I was caught speaking with another student when everyone was supposed to study quietly.
+This cringing moment keeps flashing back on me and I've tried various ways to shun it off, to no avail.
+It's until I read this book that I realize my very behavior is centered around avoiding or denying that experience, which couldn't be more wrong!
+The author argues that from pains we uncover values, which shines a light on my long-lasting problem.
+The reason that I am being haunted by embarrassing memory is that I try to maintain a high standard on myself, even from a young age.
+In other words, my self-esteem is too high to accept that mistake, which constantly magnifies every minor misstep I have.
+Also the spotlight effect might be a cahoot during the process.
+After all, I am probably the only one who still remembers those embarrassing moments, most people didn't even pay any attention to them.
+
+The way out of pain is simple -- try to live with it.
+Embrace it, really feel it, give it a name if you feel like so.
+Seize the opportunity to look at it when it appears.
+Painful experience will lose its power if we examine it close enough.
+
 ## Live in the present
+
+Now we are fully aware that thoughts are just thoughts and there exist transcendent selves within us, we've also bravely lived with our negative experiences, what's next?
+The author recommends a fourth pivot called 'presence', which is in accord with what many mindfulness practices try to achieve.
+We spend too much time ruminating the past and imagining the future, neither of them could be under our control.
+It is in those missed moments that we forget the most precious thing in our lives -- the present.
+If I set a goal to get up at 6am in the morning but surrendered to my evil procrastination and didn't get up until 7:30am.
+The best strategy then is not berating myself for the missed one and half hour, but fully appreciating the current moment when I can enjoy a healthy breakfast and plan for the rest of the day.
+
+Mindfulness practice helps too, which I haven't managed to acquire that habit.
+I did practice a bit of the breathing exercise and I know how hard it is to focus our mind on perhaps the simplest thing -- breathing.
+The system 1 keeps hinting, luring or coercing our minds into a wandering state, in which all kinds of thoughts are considered in a fleeting speed.
+Failure to calm our busy minds down is a common cause to insomnia.
+Worse, it keeps us from living in the present, even doing the most basic thing like breathing wholeheartedly becomes a challenge.
 
 ## Recognize true values
 
+I've never thought too much about what my true values are, for which I'll have to come back later.
+
 ## Life in action
+
+Life is a strenuous endeavor, and the best thing we can do is to make it a bit easier.
+Liberating us from the rein of our dictator within is the first step, which can never be done too early.
+Examining our thoughts from a fresh perspective gives us the freedom to make choices.
+Uncovering our true selves removes the mental blinder that keeps us from having an open mind.
+Accepting negative experiences peps up our life journey, and living in the present makes everything meaningful.
