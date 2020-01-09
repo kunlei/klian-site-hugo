@@ -18,8 +18,8 @@ I tend to forget things if I don't use them for a while, but this book is really
 
 - [ ] Chapter 2: Variables and Basic Types
 - [ ] Chapter 3: Strings, Vectors and Arrays
-- [ ] Chapter 4: Expressions
-- [ ] Chapter 5: Statements
+- [x] Chapter 4: Expressions
+- [x] Chapter 5: Statements
 - [ ] Chapter 6: Functions
 - [ ] Chapter 7: Classes
 
