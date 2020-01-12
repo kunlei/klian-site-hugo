@@ -13,6 +13,7 @@ I am an avid reader and below compiles the books I read or am reading...
 
 1. [A liberated mind]({{< ref "/post/book/book-liberated-mind.md">}})
 2. Thinking, fast and slow
+3. Nudge: Improving Decisions About Health, Wealth, and Happiness
 
 ### 2019
 
