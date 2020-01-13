@@ -1,35 +1,32 @@
 ---
 title: C++ - Reference
-date: 2019-12-31
-draft: true
+date: 2020-01-12
+draft: false
 tags: ["c++"]
 ---
 
-I use references frequently in my C++ codes and don't usually think about the syntax requirements associated with it.
-It turns out that there are some intricacies in its usage, below is a brief summary in order to internalize some basic rules.
+Reference is one of the compound types in C++ that modifies the base type of a variable.
+It is essentially another name of an existing variable, meaning that any operation on a reference is performed on the variable that the reference is bound to.
+It is important to note that a reference `is not an object`.
 
-## Define a Reference
-
-A reference is defined using the `&` operator and is an alias (or alternate name) to another object (not literals).
-For example, the first line in the code snippet below is correct but the second is not.
+A reference is defined using the `&` operator, as in the code below,
 
 ```cpp
-int num = 3, &rnum = num; //right
-int &ri = 5; // wrong
+int num = 3;
+int &ref = num;
 ```
 
-Note that a reference is not an object.
-
-## Initialization
-
-One requirement of using reference is that it must be initialized upon declaration, that is, the code below won't compile:
+A reference must be bound to a variable upon creation, for example, the code below will trigger compilation error.
 
 ```cpp
-int &ri;
+int &ref; // error
 ```
 
-Once a reference is initialized, it cannot be bound to another variable.
+One thing to heed is that a reference cannot be bound to another variable after creation.
+Line 3 appears to bind the reference `ref` to a new variable `b`, but is actually an assignment operation -- assign the value in `b` to variable `a` to which the reference is bound to.
 
-## Usage
-
-### Function parameter
+```cpp
+int a = 1, b = 2;
+int &ref = a;
+ref = b; // assignment to a
+```
