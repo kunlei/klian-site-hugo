@@ -14,6 +14,9 @@ Reading is a noble thing, but too high a target spells the failure from the begi
 
 + 20 books
   + That's about one book every two weeks, not too much pressure and thirty minutes every day should suffice to cover it.
+  + Update log
+      + A Liberated Mind
+      + Nudge
 + 10 book reviews
   + Reading without thinking is fruitless. I'll try to write and save more of my understanding to see how it evolves over time.
   + Update log
@@ -64,7 +67,7 @@ This should have been put as the first item in the list, physical health is the 
 
 Weekly and monthly reflection is beneficial for person growth and I should do it more often, the ultimate goal is,
 
-+ weekly and monthly reflection
++ monthly reflection
 
 ## Update Log
 
@@ -73,3 +76,4 @@ It'd be interesting to see the journey next year.
 
 + Compiled post about C++ data types - 12/28/2019
 + Add book review of *A Liberated Mind* - 01/07/2020
++ Finish reading book *Nudge* - 01/11/2020
