@@ -6,6 +6,12 @@ comments: false
 
 Hello! My name is Kunlei Lian, and I'm a Sr. Data Scientist working at [Walmart Labs](https://www.walmartlabs.com/).
 
+## Wait, Data Scientist?
+
+Yeah, I know. You probably couldn't get any flavor of data science in my posts here, BECAUSE I AM NOT DOING ANY DATA SCIENCE WORK.
+Data scientist is a big umbrella in Walmart and I am actually an undercover Operations Research Scientist (don't ask where I work:-)\).
+I do all kinds of optimization works in supply chain area, routing is my favorite.
+
 ## What's This Site For
 
 I tend to forget things if I don't jot them down at the moment of learning or active using.
@@ -27,9 +33,13 @@ If you are interested in contacting me, you can always:
 * Find me on [Github](https://github.com/kunlei/)
 * Leave a comment on my site!
 
+## Irrelevant
+
+I originally put the below formulation here for testing the LaTex rendering, and somehow found it beautiful and silly (as the optimal solution is obviously 0 for all $x_i$), so I decided to keep it here.
+
 $$
 \begin{align}
 \text{min.} \quad & \sum_{i \in \mathcal{I}}x_i \newline
-\text{s.t.} \quad & x_i \in {0, 1}, \ \forall i \in \mathcal{I}
+\text{s.t.} \quad & x_i \in \{0, 1\}, \ \forall i \in \mathcal{I}
 \end{align}
 $$
