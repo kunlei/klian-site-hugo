@@ -5,7 +5,13 @@ draft: false
 tags: ["c++"]
 ---
 
-I always find the definition of arrays in C++ counterintuitive, partly due to the fact the a pair of brackets must be put after the name of the variable:
+Arrays are used less frequently than the `vector` library type, but may provide a option to define a list of objects when the size does not change.
+I always find the definition of arrays in C++ counterintuitive, partly due to the fact the a pair of brackets must be put after the name of the variable.
+I actually use dynamically allocated arrays more often in my daily programming experiences.
+
+## Initialization
+
+The code below shows how to define fixed-sized arrays.
 
 ```cpp
 int a[10]; // array of ten integers
@@ -29,7 +35,7 @@ One caveat is the initialization of a character array using string literals, whi
 char d[] = "hello"; // the size of d is 6!!!
 ```
 
-### Array Pointer and Reference
+## Array Pointer and Reference
 
 We can always try to make our lives harder by defining a pointer or reference to an array.
 
@@ -79,3 +85,21 @@ for (int *ptr = ab; ptr != ae; ++ptr) {
 The option 3 needs a bit explanation, the variables `ab` and `ae` are essentially pointers to the first and one-past-the-last element in the array.
 
 ## Multidimensional Arrays
+
+Multidimensional arrays are defined in similar ways, with more brackets after the array name.
+
+```cpp
+int aa[1][2] = {
+  {2, 2},
+  {3, 3}};
+```
+
+Iterating elements in an array can be done using a foreach loop.
+
+```cpp
+for (auto &r : aa) {
+  for (auto &c : r) {
+    cout << c << endl;
+  }
+}
+```

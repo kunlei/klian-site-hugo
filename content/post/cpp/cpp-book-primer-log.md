@@ -17,7 +17,7 @@ I tend to forget things if I don't use them for a while, but this book is really
 ### Part I: the Basics
 
 - [x] Chapter 2: Variables and Basic Types
-- [ ] Chapter 3: Strings, Vectors and Arrays
+- [x] Chapter 3: Strings, Vectors and Arrays
 - [x] Chapter 4: Expressions
 - [x] Chapter 5: Statements
 - [ ] Chapter 6: Functions
