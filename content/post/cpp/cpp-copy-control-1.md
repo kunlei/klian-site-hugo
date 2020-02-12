@@ -1,5 +1,6 @@
 ---
 title: C++ - Copy Control (1)
+subtitle: The gang of three
 date: 2020-02-09
 draft: false
 tags: ["c++"]

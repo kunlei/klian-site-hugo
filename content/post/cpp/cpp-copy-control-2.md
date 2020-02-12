@@ -1,6 +1,7 @@
 ---
 title: C++ - Copy Control (2)
-date: 2020-02-11
+subtitle: Create objects that act independently
+date: 2020-02-10
 draft: false
 tags: ["c++"]
 ---
@@ -73,7 +74,7 @@ The destructor simply needs to free the space used by the weight variable.
 
 ```cpp
 // destructor
-~Car() {
+Car::~Car() {
   delete pWeight;
 }
 ```
