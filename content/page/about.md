@@ -4,7 +4,7 @@ subtitle:
 comments: false
 ---
 
-Hello! My name is Kunlei Lian, and I'm a Sr. Data Scientist working at [Walmart Labs](https://www.walmartlabs.com/).
+Hello! My name is Kunlei Lian, and I work as a Staff Data Scientist at [Walmart Labs](https://www.walmartlabs.com/).
 
 ## Wait, Data Scientist?
 

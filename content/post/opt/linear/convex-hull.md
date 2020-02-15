@@ -1,6 +1,6 @@
 ---
 title: Convexity
-date: 2020-02-14
+date: 2020-02-15
 draft: false
 tags: ["opt", "lp"]
 ---
@@ -50,7 +50,8 @@ This is an important conclusion, as every linear programming solution space is a
 
 A convex set requires the line segment joining any two points lies within the set, and the line segment actually represents all the *convex combinations* of the two points.
 The concept of convex combination can be generalized into multiple points: 
-let $\mathbf{x}_1, \mathbf{x}_2, \cdots, \mathbf{x}_n \in \mathcal{R}^n $ and $\lambda_1, \lambda_2, \cdots, \lambda_n$ are non-negative scalars, then $\sum\_{i=1}^n \lambda_i x_i$ is called the **convex combination.
+let $\mathbf{x}_1, \mathbf{x}_2, \cdots, \mathbf{x}_m \in \mathcal{R}^n $ and $\lambda_1, \lambda_2, \cdots, \lambda_m$ are non-negative scalars, then $\sum\_{i=1}^m \lambda_i x_i$ is called the **convex combination.
+
 ## Convex Hull
 
-Given a set of vectors $\mathbf{x}_1, \mathbf{x}_2, \cdots, \mathbf{x}_n \in \mathcal{R}^n $, their *convex hull* is defined as all the convex combinations of th
+Given a set of vectors $\mathbf{x}_1, \mathbf{x}_2, \cdots, \mathbf{x}_m \in \mathcal{R}^n $, their *convex hull* is defined as all the convex combinations of th

@@ -1,6 +1,6 @@
 ---
 title: Polyhedron
-date: 2020-02-13
+date: 2020-02-14
 draft: false
 tags: ["opt", "lp"]
 ---
