@@ -43,6 +43,7 @@ mathjax = true
   url = "blog-cn"
   weight = 0
 
+# blog
 [[menu.main]]
   identifier = "blog"
   name = "Blog"
@@ -54,6 +55,24 @@ mathjax = true
   name="Reading"
   url = "/page/book-list"
   weight = 1
+
+# optimization
+[[menu.main]]
+  identifier = "opt"
+  name = "O.R."
+  weight = 2
+
+[[menu.main]]
+  parent = "opt"
+  name = "Linear"
+  url = "/page/opt-linear-index"
+  weight = 1
+
+[[menu.main]]
+  parent = "opt"
+  name = "Integer"
+  url = "/page/opt-integer-index"
+  weight = 2
 
 # coding
 [[menu.main]]
