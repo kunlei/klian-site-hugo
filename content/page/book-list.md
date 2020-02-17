@@ -15,6 +15,9 @@ I am an avid reader and below compiles the books I read or am reading...
 2. Thinking, fast and slow
 3. Nudge: Improving Decisions About Health, Wealth, and Happiness
 4. Winning the Loser's Game
+5. Your money or your life
+6. Better than before
+7. Black box thinking - reading
 
 ### 2019
 
