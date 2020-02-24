@@ -17,7 +17,8 @@ I am an avid reader and below compiles the books I read or am reading...
 4. Winning the Loser's Game
 5. Your money or your life
 6. Better than before
-7. Black box thinking - reading
+7. Black box thinking
+8. Paradox of choice - reading
 
 ### 2019
 
