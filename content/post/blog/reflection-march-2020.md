@@ -1,6 +1,6 @@
 ---
 title: Daily Reflection
-date: 2020-01-01
+date: 2020-03-14
 draft: true
 ---
 
@@ -25,3 +25,40 @@ A couple of things that are worth appraise.
 A few things that could be improved:
 
 + Afternoon time could be more productive.
+
+## 03/11/2020 Wednesday
+
+### Event log
+
++ Review optimization results.
+
+## 03/12/2020 Thursday
+
+### Event log
+
++ Didn't get up until 8:20am since I went to bed pretty late around 12:00am.
++ Spent the whole morning reviewing the ocean procurement optimization model again.
++ Worked with business in the afternoon to run multiple models.
+
+### Achievements
+
++ Finish daily reading goal.
++ Fix ocean procurement model new request onsite.
+
+### Potentials
+
++ Get up early.
+
+## 03/13/2020 Friday
+
+### Event log
+
++ Not much done.
+
+## 03/14/2020 Saturday
+
+### Notes
+
++ Didn't get up until 8am, although went to bed around 10:30pm, felt tired.
++ Spent time reviewing the first 50 words in word list 3.
++ First day of officially working at home. Walmart sent official announcement to let associates to work from home in coming week until April. Not sure how long this will last.
