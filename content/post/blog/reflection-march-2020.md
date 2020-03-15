@@ -62,3 +62,4 @@ A few things that could be improved:
 + Didn't get up until 8am, although went to bed around 10:30pm, felt tired.
 + Spent time reviewing the first 50 words in word list 3.
 + First day of officially working at home. Walmart sent official announcement to let associates to work from home in coming week until April. Not sure how long this will last.
++ Ran two ocean procurement models: 50b and 60b.
