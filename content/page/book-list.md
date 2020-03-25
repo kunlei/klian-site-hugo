@@ -20,6 +20,7 @@ I am an avid reader and below compiles the books I read or am reading...
 7. Black box thinking
 8. Paradox of choice - reading
 9. The 5 A.M. club
+10. The great influenza
 
 ### 2019
 
