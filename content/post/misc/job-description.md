@@ -42,9 +42,18 @@ percentage of time: 10%
 
 percentage of time: 10%
 
+
+
 +	Define optimization problems under ambiguous business considerations, gather appropriate data from multiple sources, build model and deliver recommendations at the speed of business. Work with peers and stakeholders to evaluate different business opportunities. 
 
 percentage of time: 10%
+
+Problems solved by a Staff Data Scientist involve three components:
+
+1) Work with business partners to clarify operational objectives and recognize business constraints in order to unveil underlying optimization problems. Transform objective and constraint considerations into mathematical forms that can be solved using optimization techniques. Understand relative importance among various objectives in order to produce optimization results that are in line with business expectations.
+2) Identify required data needed to feed into the model and gather all the required data from multiple sources and platforms. Build data reading processes to read, clean and transform needed data into usable format.
+3) Build optimization model that encompasses the essential objective and constraints in order to produce results in short time, conduct validations with business to verify the model assumptions and results.
+4) Present optimization results to stakeholders and explain the optimal solution produced by the optimization exercise. Perform sensitivity analysis to understand cost variations when using different assumptions or objectives in various operational scenarios.
 
 +	Employ operations research expertise, especially large-scale optimization techniques like heuristics/metaheuristics, column generation and other decomposition strategies, and adopt high performance parallel computing technologies like GPU to develop customized, scalable and sustainable optimization models to solve business problems of various scales across the supply chain; Implement realistic simulation models, conduct experiments and perform what-if analysis to help business evaluate alternative recommendations.   
 
