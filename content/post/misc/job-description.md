@@ -38,11 +38,17 @@ Walmart business is thriving all the years and the scale of the optimization pro
 
 percentage of time: 10%
 
+An optimization project conducted by a Staff Data Scientist usually has huge impact on operational efficiency and costs, and it is therefore essential to apply up-to-date optimization expertise to various stages of the project life cycle. 
+
+1) In the project development stage, the most competitive optimization framework and technique should be adopted based on up-to-date knowledge about existing options available in the academic literature as well as industry practice. Selecting the right algorithm largely decides whether an optimization project will come to fruition in implementation phase.
+2) Project execution involves implementing the selected optimization algorithm in the most efficient and stable way in order to make sure it can be quickly validated using real-life problem instances and weather the test of extreme cases that occur occasionally. More importantly, issues must be correctly identified upon emergence and right fix must be deployed to produce desirable results.
+3) Continuous improvements to the optimization engine must be conducted to cope with new requirements or make the algorithm performs better in terms of speed and performance. Usually, this can be achieved by keeping up-to-date optimization expertise gained through following the most recent academic advancements on optimization theories and trending industry practices.
+
 +	Actively engage with product managers and business partners to develop a holistic view of Walmart supply chain operations from both e-commerce and store perspectives to identify opportunities of integrating online and offline, upstream and downstream systems. 
 
 percentage of time: 10%
 
-
+Supply chain is an integrated system and optimizing one part of the supply chain without considering omni-channels leas to sub-optimal solutions. A Staff Data Scientist needs to actively work with product managers and business partners to develop a holistic view of the supply chain operations in order to identify optimization opportunities that works both online and offline, upstream and downstream. For example, the inbound transportation from suppliers to distribution centers was usually considered separately from the outbound transportation from distribution centers to stores, but the underlying transportation optimization problem is better solved as a whole, which opens more opportunities to reduce transportation cost. The online e-Commerce transportation is another example in which great cost savings could be achieved by integrating it with existing offline transportation network. It is therefore vital to have a holistic view of Walmart supply chain operations so that an optimization problem is not solved in solo mode.
 
 +	Define optimization problems under ambiguous business considerations, gather appropriate data from multiple sources, build model and deliver recommendations at the speed of business. Work with peers and stakeholders to evaluate different business opportunities. 
 
