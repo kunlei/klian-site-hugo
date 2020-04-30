@@ -45,7 +45,7 @@ The goal in this category is,
 + 10 articles about C++
   + Anything related to C++ is fine, use it as a notebook to save new learnings for future reference.
   + Update log
-        + [Data types]({{< ref "../cpp/cpp-data-types.md" >}})
+        + [Data types]({{< ref "/post/cpp/cpp-data-types.md" >}})
 + 10 articles about optimization
   + Mostly about essential algorithms in operations research. Writing things in a clear and easy to understand way is best to full grasp a concept.
 
