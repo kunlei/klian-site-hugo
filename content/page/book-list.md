@@ -21,6 +21,8 @@ I am an avid reader and below compiles the books I read or am reading...
 8. Paradox of choice - reading
 9. The 5 A.M. club
 10. The great influenza
+11. The tipping point
+12. How to take smart notes
 
 ### 2019
 
