@@ -18,3 +18,13 @@ This page compiles all the posts about linear programming.
 ## Simplex Algorithm
 
 ## Column Generation
+
++ Cutting stock problem
++ Vehicle routing problem
+
+## Cutting Planes
+
+## Dantzig-Wolfe Decomposition
+
+
+## Benders Decomposition
