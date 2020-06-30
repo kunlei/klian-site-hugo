@@ -98,6 +98,12 @@ mathjax = true
   url = "/page/cplex-index"
   weight = 3
 
+[[menu.main]]
+  parent = "coding"
+  name = "ALGORITHM"
+  url = "/page/algorithm-index"
+  weight = 4
+
 
 # about
 [[menu.main]]
