@@ -1,7 +1,7 @@
 ---
 title: Linear, Affine, Conic and Convex Combinations
 date: 2020-06-29
-draft: true
+draft: false
 tags: ["polyhedron"]
 ---
 
