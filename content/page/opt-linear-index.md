@@ -20,6 +20,7 @@ This page compiles all the posts about linear programming.
 
 + [Fourier-Motzkin Elimination]({{< ref "../post/opt/linear/fourier-motzkin-elimination.md" >}})
 + [Solving Linear Programs using Projection]({{< ref "../post/opt/linear/projection-solve-linear-program.md" >}})
++ [Deriving Theorems of the Alternatives using Projection]({{< ref "../post/opt/linear/theorem-of-alternatives.md" >}})
 
 ## Simplex Algorithm
 
