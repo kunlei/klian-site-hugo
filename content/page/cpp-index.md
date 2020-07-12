@@ -13,4 +13,4 @@ This page lists all the C++-related posts.
 
 ### Study Log
 
-1. [C++ Primer]({{< ref "../post/cpp/cpp-book-primer-log.md" >}})
+<!-- 1. [C++ Primer]({{< ref "../post/cpp/cpp-book-primer-log.md" >}}) -->
