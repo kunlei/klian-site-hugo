@@ -5,7 +5,7 @@ date: 2019-10-19
 tags: ["cplex", "Java"]
 ---
 
-In a previous [post]({{< ref "./cplex-java-build-model-by-row.md" >}}), we examined how to build optimization models row-wise, in which decision variables and constraints are directly created and managed by an IloCplex object.
+In a previous [post]({{< ref "./build-model-by-row.md" >}}), we examined how to build optimization models row-wise, in which decision variables and constraints are directly created and managed by an IloCplex object.
 It turns out that there is another, more powerful in certain cases, way to build and manage constraints in CPLEX and, in this post, we'll look at how to utilize *IloLPMatrix* to build models by row.
 
 ## An illustrative example

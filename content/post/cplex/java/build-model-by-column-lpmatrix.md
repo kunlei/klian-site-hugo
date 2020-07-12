@@ -10,7 +10,7 @@ IloLPMatrix is commonly used in building large-scale optimization models.
 
 ## An illustrative example
 
-The same example used in a previous [post]({{< ref "./cplex-java-build-model-by-row-lpmatrix.md" >}}) is repeated here for clarity.
+The same example used in a previous [post]({{< ref "./build-model-by-row-lpmatrix.md" >}}) is repeated here for clarity.
 
 $$
 \begin{align}

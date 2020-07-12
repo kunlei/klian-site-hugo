@@ -5,7 +5,7 @@ date: 2019-10-20
 tags: ["cplex", "Java"]
 ---
 
-In a previous [post]({{< ref "cplex-java-build-model-by-row.md">}}), we looked at how to build models by adding rows sequentially.
+In a previous [post]({{< ref "build-model-by-row.md">}}), we looked at how to build models by adding rows sequentially.
 It starts with creating decision variables, with which the objective function is defined.
 Constraints are then created sequentially and incorporated into the model.
 In optimization textbooks, mathematical models are usually represented in matrix format, and in CPLEX, it is indeed possible to build models column-wise.
