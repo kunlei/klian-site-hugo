@@ -113,3 +113,29 @@ $$
 & \mathbf{v} \geq 0
 \end{align}
 $$
+
+With a given $\mathbf{y_0}$, the main problem can be solved first to get its optimal value $z_0$.
+By solving the subproblem, we obtain the optimal solution $\mathbf{v_0}$ and the corresponding optimal value $\mathbf{f'y\_0} + \mathbf{v'\_{0}(b - By_0)}$.
+There exist three scenarios:
+
++ the subproblem has an optimal value and $z < \mathbf{f'y\_0} + \mathbf{v'\_{0}(b - By_0)}$, in this case, we add the constraint $z \geq \mathbf{f'y} + \mathbf{v'\_{0}(b - By)}$ to the main problem
++ the subproblem is unbounded, in this case, we add the constraint $\mathbf{v'\_0(b - By)} \leq 0$ to the main problem.
++ the subproblem is infeasible, terminate the main problem.
+
+### Lower bound and upper bound
+
+Note that each optimal solution to the relaxed main problem provides a lower bound to the original formulation.
+On the other hand, the optimal value of the subproblem gives a valid upper bound.
+To see this, notice that the subproblem is equivalent to
+
+$$
+\begin{align}
+\mbox{min.} \quad & \mathbf{f'y} + \mathbf{c'x} \newline
+\mbox{s.t.} \quad & \mathbf{Ax}  \geq \mathbf{b} - \mathbf{By}\newline
+& \mathbf{x} \geq 0 \newline
+\end{align}
+$$
+
+Therefore, the optimal dual solution of the subproblem, together with the $\mathbf{y}$ value, provides a feasible solution to the original problem, which is also a valid upper bound on the relaxed main problem.
+
+## Benders decomposition workflow
