@@ -6,7 +6,7 @@ tags: ["optimization", "decomposition"]
 ---
 
 Benders decomposition is a potent, albeit advanced, technique to attack optimization problems with certain special structures.
-Specifically, it's applicable when a model possesses the following structure:
+Specifically, it's applicable when a model possesses the following format:
 
 $$
 \begin{align}
@@ -47,15 +47,9 @@ $$
 \end{align}
 $$
 
-where $K$ is the number of possible multipliers that meet the following criteria:
+where $K$ is the number of possible multipliers that enable this projection.
 
-$$
-\begin{align}
-\mathbf{v'A} + \mathbf{w'} = u\mathbf{c'}
-\end{align}
-$$
-
-Given that $u \geq 0$, the first constraints can be subsumed into two categories based on whether $u = 0$ or $u \gt 0$:
+Given that $u \geq 0$, the first constraints can be subsumed into two categories based on whether $u = 0$ or $u \gt 0$ (which can be further rescaled into $u = 1$)
 
 $$
 \begin{align}
@@ -69,5 +63,53 @@ $$
 Note that the above model, hereafter we refer it as the main problem, is essentially the original model projected into the space $\mathbf{y} \in \mathbf{R}^{n_2}$, and $\mathbf{K}$ is the total number of constraints that define the feasible region of the projected model.
 Unfortunately, $K$ is usually prohibitively large for practical size problems.
 
+### Projection cone
+
+Now that we have a model with humongous number of constraints, which is not necessarily exciting to include all at once.
+Fortunately, the $K$ sets of multipliers possess some special attributes, namely, they are all solutions to the following system:
+
+$$
+\begin{align}
+\mathbf{v'A} + \mathbf{w'I} = u\mathbf{c'} \newline
+u \geq 0 \newline
+\mathbf{v} \geq 0 \newline
+\mathbf{w} \geq 0 \newline
+\end{align}
+$$
+
+They are also called **projection cone**
+
+$$
+\begin{align}
+C_x(P) = \\{(u, \mathbf{v}, \mathbf{w}) | \mathbf{v'A} + \mathbf{w'I} - u\mathbf{c'} = 0, (u, \mathbf{v}, \mathbf{w}) \geq 0\\}
+\end{align}
+$$
+
+It turns out that not all solutions to the above system need to be generated - only the extreme rays are needed.
+Again, depending on whether $u = 0$ or $u > 0$ ($u = 1$ after proper scaling), the extreme rays can be generated in two scenarios:
+
++ if $u = 1$, $\mathbf{v}$ are the extreme points of the polyhedron $\\{\mathbf{v} | \mathbf{v'A} \leq \mathbf{c}, \mathbf{v} \geq 0\\}$
++ if $u = 0$, $\mathbf{v}$ are the extreme rays of the recession cone $\\{\mathbf{v} | \mathbf{v'A} \leq 0, \mathbf{v} \geq 0\\}$
+
 ## Delayed constraint generation
 
+Now let's step back and check what we've achieved so far:
+
++ We've transformed the original formulation with both the $\mathbf{x}$ and $\mathbf{y}$ variables into one with only the $\mathbf{y}$ variable.
++ The new formulation has many more constraints that are determined by the extreme rays of a cone involving only the $\mathbf{x}$ variables.
+
+In other words, we've effectively decomposed the original problem into two subproblems, one we refer to as the main problem, and the other as the subproblem.
+Since it's not practical or even necessary to include all the constraints, we can employ a small portion of the constraints and solve a relaxed main problem first.
+Then by identifying the constraints that the resulting main problem solution violates, we can iteratively add more constraints on the fly, this is a technique called as delayed constraint generation.
+
+### Subproblem
+
+Let's formally define the subproblem:
+
+$$
+\begin{align}
+\mbox{max.} \quad & \mathbf{f'y} + \mathbf{v'(b - By)} \newline
+\mbox{s.t.} \quad & \mathbf{v'A} \leq \mathbf{c} \newline
+& \mathbf{v} \geq 0
+\end{align}
+$$
