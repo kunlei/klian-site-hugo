@@ -1,5 +1,5 @@
 ---
-title: Benders Decomposition
+title: Benders Decomposition Explained
 date: 2020-07-12
 draft: false
 tags: ["optimization", "decomposition"]
@@ -139,3 +139,17 @@ $$
 Therefore, the optimal dual solution of the subproblem, together with the $\mathbf{y}$ value, provides a feasible solution to the original problem, which is also a valid upper bound on the relaxed main problem.
 
 ## Benders decomposition workflow
+
+Now we are ready to outline the workflow of Benders' Decomposition:
+
+1. Identify an initial value for $\mathbf{y \in Y}$, let $UB$ and $LB$ denote the upper bound and lower bound of the optimal solution, set their corresponding values to $\infty$ and $-\infty$, respectively.
+2. Solve the Benders subproblem $\mbox{max}\\{\mathbf{v'(b-By)} | \mathbf{v'A \leq c}, \mathbf{v \geq 0}\\}$ with the current $\mathbf{y}$, and
+   1. if the subproblem is infeasible, terminate the algorithm
+   2. if the subproblem has an optimal solution, find the solution $\mathbf{v}$, update the upper bound as $UB = \mbox{min}\\{UB, \mathbf{f'y + v'(b - By)}\\}$, terminate the algorithm if $UB - LB  < \epsilon$
+   3. if the subproblem is unbounded, find the extreme ray $\mathbf{v}$
+3. Add a new constraint to the relaxed main problem based on whether $\mathbf{v}$ is an extreme point or extreme ray
+   1. if $\mathbf{v}$ is an extreme point, add constraint $z \geq \mathbf{f'y + v'(b - By)}$
+   2. if $\mathbf{v}$ is an extreme ray, add constraint $\mathbf{v'(b - By) \leq 0}$
+4. Solve the resulting main problem and get its optimal value $z$, update lower bound $LB = z$. Terminate the algorithm if $UB - LB  < \epsilon$ or the relaxed main problem is infeasible.
+
+We'll examine some applications of Benders' decomposition in future posts.

@@ -34,3 +34,5 @@ This page compiles all the posts about linear programming.
 ## Dantzig-Wolfe Decomposition
 
 ## Benders Decomposition
+
++ [Benders Decomposition Explained]({{< ref "/post/opt/linear/benders-decomposition.md" >}})
