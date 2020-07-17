@@ -23,9 +23,12 @@ I am an avid reader and below compiles the books I read or am reading...
 10. The great influenza
 11. The tipping point
 12. How to take smart notes
-13. Naked economics (reading)
-14. Poor economics (reading)
+13. Naked economics
+14. Poor economics
 15. The room where it happened (reading)
+16. China's gilded age (reading)
+17. The end of white christian america (reading)
+18. Addiction, procrastination and laziness (reading)
 
 ### 2019
 
