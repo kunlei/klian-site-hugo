@@ -1,5 +1,5 @@
 ---
-title: Capacitated Facility Location Problem - Modeling
+title: Capacitated Facility Location Problem - MIP Model
 date: 2020-07-17
 draft: false
 tags: ["optimization", "Benders decomposition"]
