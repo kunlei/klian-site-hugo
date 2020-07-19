@@ -36,6 +36,7 @@ This page compiles all the posts about linear programming.
 ## Benders Decomposition
 
 + [Benders Decomposition Explained]({{< ref "/post/opt/benders/benders-decomposition.md" >}})
-+ [Capacitated Facility Location - Model]({{< ref "/post/opt/benders/facility-location-model.md" >}})
++ [Capacitated Facility Location - MIP Model]({{< ref "/post/opt/benders/facility-location-model.md" >}})
++ [Capacitated Facility Location - MIP Model Solving using CPLEX]({{< ref "/post/opt/benders/facility-location-standard-cplex.md" >}})
 + [Capacitated Facility Location - Auto Benders]({{< ref "" >}})
 + [Capacitated Facility Location - Manual Benders]({{< ref "" >}})
