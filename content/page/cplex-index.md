@@ -14,9 +14,8 @@ This is an index page for all CPLEX-related posts.
 
 1. [Setup]({{< ref "../post/cplex/java/setup.md" >}})
 2. API deep dive
-   1. [IloAddable, IloModel and IloModeler]({{< ref "../post/cplex/java/api-deep-dive-1.md">}})
-   2. [IloAddable and IloModel]({{< ref "/post/cplex/java/iloaddable-and-ilomodel.md" >}})
-   3. IloLPMatrix
+   1. [IloAddable and IloModel]({{< ref "/post/cplex/java/iloaddable-and-ilomodel.md" >}})
+   2. [IloModel, IloModeler and IloMPModeler]({{< ref "../post/cplex/java/IloModel-IloModeler-IloMPModeler.md">}})
 3. Model building
    1. By row
       1. [without IloLPMatrix]({{< ref "../post/cplex/java/build-model-by-row.md">}})
@@ -27,4 +26,3 @@ This is an index page for all CPLEX-related posts.
 4. Callback
    1. Optimization callback
       1. [Continuous callback]({{< ref "../post/cplex/java/continuous-callback.md" >}})
-   2. Tuning callback
