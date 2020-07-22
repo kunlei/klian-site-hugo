@@ -31,15 +31,5 @@ If you are interested in contacting me, you can always:
 * Email me at [kunlei -at- gmail.com](mailto:kunlei.lian@gmail.com)
 * Hit me up on [Linkedin at in/kunlei](https://www.linkedin.com/in/kunlei-lian/)
 * Find me on [Github](https://github.com/kunlei/)
+* My google scholar page [here](https://scholar.google.com/citations?user=beuQ5RsAAAAJ&hl=en)
 * Leave a comment on my site!
-
-## Irrelevant
-
-I originally put the below formulation here for testing the LaTex rendering, and somehow found it beautiful and silly (as the optimal solution is obviously 0 for all $x_i$), so I decided to keep it here.
-
-$$
-\begin{align}
-\text{min.} \quad & \sum_{i \in \mathcal{I}}x_i \newline
-\text{s.t.} \quad & x_i \in \{0, 1\}, \ \forall i \in \mathcal{I}
-\end{align}
-$$
