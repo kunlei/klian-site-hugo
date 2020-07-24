@@ -26,9 +26,11 @@ I am an avid reader and below compiles the books I read or am reading...
 13. Naked economics
 14. Poor economics
 15. The room where it happened (reading)
-16. China's gilded age (reading)
-17. The end of white christian america (reading)
-18. Addiction, procrastination and laziness (reading)
+16. China's gilded age
+17. China's economy
+18. The end of white christian America (reading)
+19. Addiction, procrastination and laziness (reading)
+20. Too much and never enough (reading)
 
 ### 2019
 
