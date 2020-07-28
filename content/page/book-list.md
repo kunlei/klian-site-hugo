@@ -30,7 +30,9 @@ I am an avid reader and below compiles the books I read or am reading...
 17. China's economy
 18. The end of white christian America (reading)
 19. Addiction, procrastination and laziness (reading)
-20. Too much and never enough (reading)
+20. Too much and never enough
+21. Bookdown: Authoring Books and Technical Documents with R Markdown
+22. Can Asians think
 
 ### 2019
 
