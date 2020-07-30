@@ -33,6 +33,8 @@ I am an avid reader and below compiles the books I read or am reading...
 20. Too much and never enough
 21. Bookdown: Authoring Books and Technical Documents with R Markdown
 22. Can Asians think
+23. Why we work
+24. Get out of your own way (reading)
 
 ### 2019
 
