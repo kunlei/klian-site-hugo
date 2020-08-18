@@ -110,6 +110,12 @@ mathjax = true
   url = "/page/r-index"
   weight = 5
 
+[[menu.main]]
+  parent = "coding"
+  name = "Spring"
+  url = "/page/spring-index"
+  weight = 6
+
 # about
 [[menu.main]]
   identifier = "about"
