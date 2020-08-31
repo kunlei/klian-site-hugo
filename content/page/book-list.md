@@ -18,7 +18,7 @@ I am an avid reader and below compiles the books I read or am reading...
 5. Your money or your life
 6. Better than before
 7. Black box thinking
-8. Paradox of choice - reading
+8. Paradox of choice
 9. The 5 A.M. club
 10. The great influenza
 11. The tipping point
@@ -35,6 +35,9 @@ I am an avid reader and below compiles the books I read or am reading...
 22. Can Asians think
 23. Why we work
 24. Get out of your own way (reading)
+25. Tiny Habits by BJ Fogg
+26. Atomic Habits by James Clear
+27. The deficit myth by Stephanie Kelton (reading)
 
 ### 2019
 
