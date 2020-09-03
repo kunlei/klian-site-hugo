@@ -38,6 +38,7 @@ I am an avid reader and below compiles the books I read or am reading...
 25. Tiny Habits by BJ Fogg
 26. Atomic Habits by James Clear
 27. The deficit myth by Stephanie Kelton (reading)
+28. Rich dad poor dad
 
 ### 2019
 
