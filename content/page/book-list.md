@@ -37,8 +37,9 @@ I am an avid reader and below compiles the books I read or am reading...
 24. Get out of your own way (reading)
 25. Tiny Habits by BJ Fogg
 26. Atomic Habits by James Clear
-27. The deficit myth by Stephanie Kelton (reading)
+27. The deficit myth by Stephanie Kelton
 28. Rich dad poor dad
+29. You are a badass by Jen Sincero (reading)
 
 ### 2019
 
