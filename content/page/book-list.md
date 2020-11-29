@@ -40,6 +40,17 @@ I am an avid reader and below compiles the books I read or am reading...
 27. The deficit myth by Stephanie Kelton
 28. Rich dad poor dad
 29. You are a badass by Jen Sincero (reading)
+30. China: the bubble that never pops by Thomas Orlik
+31. Has China Won? by Kishore Mahbubani
+32. The Millionaire Next Door by Thomas J. Stanley
+33. Quit Like a Millionaire by Kristy Shen, Bryce Leung, JL Collins
+34. The Moment of Lift by Melinda Gates
+35. A Very Stable Genius by Philip Rucker (reading)
+36. Factfulness by Hans Rosling
+37. The Whole-Brain Child by Daniel J. Siegel
+38. The Obesity Code by Jason Fung
+39. Wonder by R. J. Palacio
+40. The 7 Habits of Highly Effective Teens by Sean Covey (reading)
 
 ### 2019
 
