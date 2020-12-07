@@ -51,6 +51,7 @@ I am an avid reader and below compiles the books I read or am reading...
 38. The Obesity Code by Jason Fung
 39. Wonder by R. J. Palacio
 40. The 7 Habits of Highly Effective Teens by Sean Covey (reading)
+41. The Sleep Revolution by Arianna Huffington
 
 ### 2019
 
