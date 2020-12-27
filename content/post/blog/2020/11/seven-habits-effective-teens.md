@@ -1,7 +1,7 @@
 ---
 title: Seven Habits of Effective Teens
 date: 2020-11-30
-draft: false
+draft: true
 tags: ["books", "habits"]
 ---
 
