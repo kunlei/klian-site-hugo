@@ -9,6 +9,10 @@ tag: ["book"]
 
 I am an avid reader and below compiles the books I read or am reading...
 
+### 2021
+
+1. Raising Financially Fit Kids by *Joline Godfrey*
+
 ### 2020
 
 1. [A liberated mind]({{< ref "/post/book/book-liberated-mind.md">}})
