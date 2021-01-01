@@ -12,6 +12,7 @@ I am an avid reader and below compiles the books I read or am reading...
 ### 2021
 
 1. Raising Financially Fit Kids by *Joline Godfrey*
+2. The Most Important Thing: Uncommon Sense for the Thoughtful Investor by *Howard S. Marks*
 
 ### 2020
 
