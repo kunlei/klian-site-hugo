@@ -1,7 +1,7 @@
 ---
 title: Year-End Review - 2020
 date: 2020-12-26
-draft: false
+draft: true
 tags: ["review"]
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: New Year Resolution - 2021
 date: 2020-12-27
-draft: false
+draft: true
 tags: ["resolution"]
 ---
 
