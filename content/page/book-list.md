@@ -15,6 +15,7 @@ I am an avid reader and below compiles the books I read or am reading...
 2. The Most Important Thing: Uncommon Sense for the Thoughtful Investor by *Howard S. Marks*
 3. 早起的奇迹
 4. 人间值得
+5. Frugal Isn't Cheap by *Clare Levison*
 
 ### 2020
 
